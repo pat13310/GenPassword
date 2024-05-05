@@ -12,11 +12,11 @@
 
 generator: GenPassword = GenPassword(password="Motdepasse!", length=10)  
    
-**ou**   
+**Ou**   
 
-generator: GenPassword = GenPassword()
-generator.set_length(10)
-generator.set_password("Motdepasse!")
+generator: GenPassword = GenPassword()     
+generator.set_length(10)   
+generator.set_password("Motdepasse!")   
 
 > [!TIP]
 > La longueur peut être définie en second paramètre du constructeur
