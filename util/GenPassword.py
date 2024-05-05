@@ -49,7 +49,7 @@ class GenPassword:
 
     # validate vérifie si le mot de passe respecte bien les règles
     # Une majuscule, des lettres, des nombres, des caractères de ponctuation.
-    def validate(self, password: str) -> bool:
+    def validate(self, password: str = "") -> bool:
 
         # Verification que le mot de passe correspond bien aux critères :
         # « J'utilise les expressions régulières pour vérifier la validité de mes mots de passe
