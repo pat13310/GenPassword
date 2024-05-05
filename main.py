@@ -2,7 +2,6 @@ from util.GenPassword import GenPassword, EncryptionMethod
 
 if __name__ == '__main__':
     generator: GenPassword = GenPassword(password="Motdepasse!", length=10)
-    # password: str = generator.generate()
 
     print("Vérification mode de passe", generator.validate())
     print("Sans Cryptage", generator.get_password())

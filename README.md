@@ -1,9 +1,23 @@
 ## Générateur de mot de passe
 
+
 ### Les fonctions principales de la classe GenPassword :
 
 
 ![Diagramme sans nom drawio](https://github.com/pat13310/GenPassword/assets/122201455/3eea476e-d281-45a7-b4fc-04a50c449d03)
+
+#### Exemples d'utilisation :
+
+**Création du mot de passe (manuel)**
+
+generator: GenPassword = GenPassword(password="Motdepasse!", length=10)
+> [!TIP]
+> La longueur peut être définie en second paramètre
+
+**Création du mot de passe (automatique)**
+
+generator: GenPassword = GenPassword()
+generator.generate()
 
 
 ### Formulaire du Login
