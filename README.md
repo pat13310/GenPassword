@@ -49,7 +49,7 @@ is_validate=generator.validate()
 ***
 **Vérification d'un mot de passe (crypté)**
 
-is_validate=generator.check()
+is_validate=generator.check(generator.get_password(False))
 ***
 **Obtenir le mot de passe (non crypté)**
 
