@@ -23,7 +23,7 @@ generator.generate()
 
 **Encryptage d'un mot de passe**
  
- #encryptage MD5 
+ #encryptage MD5    
  password_encrypt=generator.encrypt(EncryptionMethod.MD5)
  
  #encryptage SHA1  
