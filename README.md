@@ -1,5 +1,6 @@
 ## Générateur de mot de passe
 
+
 ### Les fonctions principales de la classe GenPassword :
 
 
