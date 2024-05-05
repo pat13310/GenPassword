@@ -10,9 +10,16 @@
 
 **Création du mot de passe (manuel)**
 
-generator: GenPassword = GenPassword(password="Motdepasse!", length=10)
+generator: GenPassword = GenPassword(password="Motdepasse!", length=10)  
+   
+**OU**   
+
+generator: GenPassword = GenPassword()
+generator.set_length(10)
+generator.set_password("Motdepasse!")
+
 > [!TIP]
-> La longueur peut être définie en second paramètre
+> La longueur peut être définie en second paramètre du constructeur
 ***
 **Création du mot de passe (automatique)**
 
