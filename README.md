@@ -53,11 +53,19 @@ is_validate=generator.check()
 ***
 **Obtenir le mot de passe (non crypté)**
 
-generator.get_password(False)
+password=generator.get_password(False)
 ***
 **Obtenir le mot de passe (crypté)**
 
-generator.get_password(True)
+password=generator.get_password(True)
+***
+**Définir le mot de passe (non crypté)**
+
+password=generator.set_password("Motdepasse!")
+***
+**Définir la longueur du mot de passe (non crypté)**
+
+password=generator.set_length(10)
 ***
 ### Formulaire du Login
 
