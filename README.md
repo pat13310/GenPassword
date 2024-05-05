@@ -12,7 +12,7 @@
 
 generator: GenPassword = GenPassword(password="Motdepasse!", length=10)  
    
-**OU**   
+**ou**   
 
 generator: GenPassword = GenPassword()
 generator.set_length(10)
