@@ -85,25 +85,26 @@ class GenPassword:
         return self.encrypted_password
 
     # On vérifie que le mot de passe à vérifier correspond bien à celui qui est crypté
-    def check(self, password_to_check: str, method: EncryptionMethod = EncryptionMethod.AUTO) -> bool:
+    def check(self, password_to_check: str = "", method: EncryptionMethod = EncryptionMethod.AUTO) -> bool:
         # on part du principe que self.password est un password "hash" donc crypté
         # Sortie: True si le password correspond au hash fait sur le mot de passe à vérifier,
         # sinon False
-
+        if len(password_to_check.strip()) != 0:
+            self.password = password_to_check
         # Si la méthode n'est pas redéfinie, on utilise celle de départ
         if method != EncryptionMethod.AUTO:
             self.method = method
         # password_to_check_encode = password_to_check.encode()
         if self.method == EncryptionMethod.BCRYPT:
-            return bcrypt.checkpw(password_to_check.encode(), self.encrypted_password)
+            return bcrypt.checkpw(self.password.encode(), self.encrypted_password)
         elif self.method == EncryptionMethod.MD5:
-            return hashlib.md5(password_to_check.encode()).hexdigest() == self.encrypted_password
+            return hashlib.md5(self.password.encode()).hexdigest() == self.encrypted_password
         elif self.method == EncryptionMethod.SHA256:
-            return hashlib.sha256(password_to_check.encode()).hexdigest() == self.encrypted_password
+            return hashlib.sha256(self.password.encode()).hexdigest() == self.encrypted_password
         elif self.method == EncryptionMethod.SHA1:
-            return hashlib.sha1(password_to_check.encode()).hexdigest() == self.encrypted_password
+            return hashlib.sha1(self.password.encode()).hexdigest() == self.encrypted_password
         elif self.method == EncryptionMethod.NOCRYPT:
-            return self.validate(password_to_check)
+            return self.validate(self.password)
 
     # On retourne la methode de cryptage employée
     def get_method_encrypt(self) -> str:
