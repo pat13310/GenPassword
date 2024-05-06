@@ -9,26 +9,31 @@
 ### Exemples d'utilisation :
 
 **Création du mot de passe (manuel)**
+```python
 
 generator: GenPassword = GenPassword(password="Motdepasse!", length=10)  
+```
    
 **Ou**   
-
+```python
 generator: GenPassword = GenPassword()     
 generator.set_length(10)   
 generator.set_password("Motdepasse!")   
-
+```
 > [!TIP]
 > La longueur peut être définie en second paramètre du constructeur
 ***
 **Création du mot de passe (automatique)**
-
+```python
 generator: GenPassword = GenPassword()
 
 generator.generate()
+```
+
 ***
 
 **Encryptage d'un mot de passe**
+```python
  
  #encryptage MD5    
  password_encrypt=generator.encrypt(EncryptionMethod.MD5)
@@ -41,35 +46,53 @@ generator.generate()
 
 #encryptage BCRYPT  
 password_encrypt=generator.encrypt(EncryptionMethod.BCRYPT)
+```
 
 ***
 **Vérification d'un mot de passe (non crypté)**
+```python
 
 is_validate=generator.validate()
 ***
 **Vérification d'un mot de passe (crypté)**
 
 is_validate=generator.check(generator.get_password(False))  
+```
 
 **Ou**   
+```python
 
 is_validate=generator.check()
+```
+
 ***
 **Obtenir le mot de passe (non crypté)**
+```python
 
 password=generator.get_password(False)
+```
+
 ***
 **Obtenir le mot de passe (crypté)**
+```python
 
 password=generator.get_password(True)
+```
+
 ***
 **Définir le mot de passe (non crypté)**
+```python
 
 password=generator.set_password("Motdepasse!")
+```
+
 ***
 **Définir la longueur du mot de passe (non crypté)**
+```
 
 password=generator.set_length(10)
+```
+
 ***
 ### Formulaire du Login
 
