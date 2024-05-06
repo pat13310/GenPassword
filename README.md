@@ -4,7 +4,7 @@
 ### Les fonctions principales de la classe GenPassword :
 
 
-![Diagramme sans nom drawio](https://github.com/pat13310/GenPassword/assets/122201455/3eea476e-d281-45a7-b4fc-04a50c449d03){:width="300px"}
+<image src="https://github.com/pat13310/GenPassword/assets/122201455/3eea476e-d281-45a7-b4fc-04a50c449d03" width="400px"></image>
 
 ### Exemples d'utilisation :
 
@@ -73,12 +73,12 @@ password=generator.set_length(10)
 ***
 ### Formulaire du Login
 
-<image src="https://github.com/pat13310/GenPassword/assets/122201455/6eddd2b3-65e0-46d4-8691-87cb268b1b81" width="300"/>
+<image src="https://github.com/pat13310/GenPassword/assets/122201455/6eddd2b3-65e0-46d4-8691-87cb268b1b81" width="300"></image>
 
 
 ### Formulaire du Générateur 
 
-<image src="https://github.com/pat13310/GenPassword/assets/122201455/f44b5ab3-e0a6-42ad-a508-84f1bf1f4a46" width="300"/>
+<image src="https://github.com/pat13310/GenPassword/assets/122201455/f44b5ab3-e0a6-42ad-a508-84f1bf1f4a46" width="300"></image>
 
 
 
