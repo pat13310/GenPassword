@@ -4,7 +4,7 @@
 ### Les fonctions principales de la classe GenPassword :
 
 
-<image src="https://github.com/pat13310/GenPassword/assets/122201455/3eea476e-d281-45a7-b4fc-04a50c449d03" width="400px"></image>
+<image src="https://github.com/pat13310/GenPassword/assets/122201455/3eea476e-d281-45a7-b4fc-04a50c449d03" width="200" height='600'></image>
 
 ### Exemples d'utilisation :
 
